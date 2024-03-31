@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}
+MGS Fan-page
+{% endblock %}
+
+{% block body %}
+<style>
+  body {
+    background: url('/static/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<div class="container mt-5 ">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/mgs1.png">
+            <div class="card-body">
+              <p class="card-text"><b>METAL GEAR SOLID</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/mgs_1">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/mgs2.png">
+            <div class="card-body">
+              <p class="card-text"><b>METAL GEAR SOLID 2: Sons Of Liberty</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="/mgs_2">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/mgs3.png">
+            <div class="card-body">
+              <p class="card-text"><b>METAL GEAR SOLID 3: Snake Eater</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" class="btn btn-sm btn-outline-secondary" href="/mgs_3">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+{% endblock %}
