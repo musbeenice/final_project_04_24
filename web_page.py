@@ -23,7 +23,7 @@ class Article(db.Model):
     date = db.Column(db.DateTime, default=datetime.now)
 
     def __repr__(self):
-        return '<Article %r' % self.id
+        return '<Article %r>' % self.id
 
 # отслеживание определенного url-адреса
 @app.route('/')
@@ -113,6 +113,7 @@ def create_post():
         try:
             db.session.add(article)
             db.session.commit()
+            print(article)
             return redirect('/posts')
         except:
             return 'При добавлении статьи произошла ошибка'
